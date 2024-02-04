@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App - Vanilla JS</title>
+</head>
+
+<body>
+    <div class="container">
+      <!-- HEADER -->
+      <form data-js="form" class="form">
+        <h1>Weather Information</h1>
+        <img data-js="logo" src="./src/logo.png" width="300px" alt="">
+        <label for="inputCity">Insert the city's name</label>
+        <input data-js="inputSearch" class="input-city" type="text"
+        name="inputCity" placeholder="Type enter to search" autocomplete="off">
+      </form>
+
+      <!-- CARD -->
+      <div data-js="card" class="weather-card hidden">
+        <div class="top-card">
+          <img data-js="day-night" src="https://via.placeholder.com/374x374?text=day/night+image">
+          <img data-js="icon" class="icon" src="https://via.placeholder.com/100x100?text=icon">
+        </div>
+
+        <div class="bottom-card">
+          <div data-js="city">City's name</div>
+          <div data-js="weather" class="weather-text">weather climate</div>
+          <div data-js="temperature" class="temperature-text">temperature</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS JS -->
+    <script src="./app.js"></script>
+</body>
+</html>

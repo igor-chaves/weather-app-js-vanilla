@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Weather App - Vanilla JS</title>
 </head>
@@ -18,7 +18,7 @@
       <!-- HEADER -->
       <form data-js="form" class="form">
         <h1>Weather Information</h1>
-        <img data-js="logo" src="./src/logo.png" width="300px" alt="">
+        <img data-js="logo" src="./public/logo.png" width="300px" alt="logo weather app">
         <label for="inputCity">Insert the city's name</label>
         <input data-js="inputSearch" class="input-city" type="text"
         name="inputCity" placeholder="Type enter to search" autocomplete="off">
@@ -40,6 +40,6 @@
     </div>
 
     <!-- SCRIPTS JS -->
-    <script src="./app.js"></script>
+    <script type="module" src="./app.js"></script>
 </body>
 </html>

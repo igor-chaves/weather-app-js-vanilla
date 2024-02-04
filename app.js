@@ -50,8 +50,8 @@ const insertCityInfosIntoDOM = async (cityKey, cityName) => {
    const weather = responseJsonWeather.WeatherText
    const temperature = responseJsonWeather.Temperature.Metric.Value
    
-   isDay ? dayNightImg.src = `./src/day.svg` : dayNightImg.src = `./src/night.svg`
-   weatherIcon.src = `./src/icons/${icon}.svg`
+   isDay ? dayNightImg.src = `./public/day.svg` : dayNightImg.src = `./public/night.svg`
+   weatherIcon.src = `./public/icons/${icon}.svg`
    cityText.textContent = cityName
    weatherText.textContent = weather
    temp.textContent = `${temperature} C`

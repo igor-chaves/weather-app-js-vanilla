@@ -8,8 +8,8 @@ const temp = document.querySelector('[data-js="temperature"]')
 const logo = document.querySelector('[data-js="logo"]')
 
 const apiKey = import.meta.env.VITE_API_KEY
-const getCityURL = city => `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${city}`
-const getWeatherUrl = cityKey => `http://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${apiKey}`
+const getCityURL = city => `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${city}`
+const getWeatherUrl = cityKey => `https://dataservice.accuweather.com/currentconditions/v1/${cityKey}?apikey=${apiKey}`
 
 const errorMessage = document.createElement("h2")
 errorMessage.innerText = "City not found, please try again"
